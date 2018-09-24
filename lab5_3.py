@@ -2,7 +2,8 @@
 
 import random
 
-user_instrument = int(input("Choose your instrument\n1.Rock\n2.Paper\n3.Scissor$
+user_instrument = int(input("Choose your instrument\n1.Rock\n2.Paper\n\
+3.Scissors\n "))
 
 script_instrument = random.randrange(1, 4)
 
