@@ -4,7 +4,7 @@ number = int(input("Input number: "))
 
 if number > 1:
     i = 2
-    while i != number:
+    while i != int(number ** 0.5):
         if (number % i) == 0:
             print("Is not a prime number")
             break
