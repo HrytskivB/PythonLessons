@@ -9,7 +9,7 @@ c = int(input("Input c: "))
 if a == 0 and b != 0:
     x1 = x2 = -(c / b)
 elif a == 0 and b == 0:
-    x1 = x2 = None
+    x1 = x2 = Any
 else:
     discriminant = b ** 2 - 4 * a * c
     x1 = (-b + discriminant ** 0.5)/2 * a
