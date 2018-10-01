@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import decimal
+import math
 
 def ui_input() -> list:
     """Input of argument"""
@@ -25,7 +26,7 @@ def deposit_duration_calculate(deposit_data: list) -> float:
         exit()
     
     #TODO duration
-    duration = 30
+    duration = math.log(deposit_data[2] / deposit_data[0], (1 + deposit_data[1] / 100))
     
     return duration
 
