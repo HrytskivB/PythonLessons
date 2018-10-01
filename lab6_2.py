@@ -24,7 +24,7 @@ def deposit_calculate(deposit_data: list) -> float:
         print("Too many or less members of list")
         exit()
     
-    final_money = deposit_data[0] * (1 + (1 + deposit_data[1] / 100) ** deposit_data[2])
+    final_money = deposit_data[0] * (1 + deposit_data[1] / 100) ** deposit_data[2]
     
     return final_money
 
