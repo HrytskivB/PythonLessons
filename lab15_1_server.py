@@ -29,8 +29,6 @@ while True:
     if client_answer.decode('utf-8') in names:
         clientsocket.send('Nice to meet you '.encode('utf-8') + client_answer)
         clientsocket.send('\n'.encode('utf-8'))
-    elif client_answer.decode('utf-8') == "Ivan":
-        clientsocket.send('Oh senpai)))\n'.encode('utf-8'))
     elif client_answer.decode('utf-8') == "What is your name?":
         clientsocket.send('My name is Bot\n'.encode('utf-8'))
     elif client_answer.decode('utf-8') == "Goodbye":
